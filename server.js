@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // Use process.env.PORT for dynamic port, fallback to 3000 for local development
-const Port = process.env.PORT || 3000;
+const Port = process.env.PORT ;
 
 app.get("/", (req, res) => {
     res.send("<p>Hello Server</p>");
